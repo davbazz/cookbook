@@ -1,0 +1,23 @@
+.recipes {
+    height: 95vh;
+    margin-top: 5vh;
+    padding: 0;
+}
+
+.recipes_left {
+    background-color: #fff;
+    background: url('https://www.simplyrecipes.com/thmb/Gc7ox1jTo2dUJHgi17eHEolw96g=/1200x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Pollo-Campero-Fried-Chicken-LEAD-06-2f69971cf13d4c7089140d6a5d6c3165.jpg') center center/cover no-repeat;
+}
+
+.recipes_chicken {
+    width: 90%;
+    height: 40%;
+    background-color: #fff;
+    opacity: 0.87;
+}
+
+.recipes_right {
+    background-color: grey;
+}
+
+
