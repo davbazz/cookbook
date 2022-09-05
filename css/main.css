@@ -1,0 +1,9 @@
+@import 'header.css';
+@import 'recipes.css';
+@import 'lunchbox.css';
+@import 'team.css';
+
+* {
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;;
+}
