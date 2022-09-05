@@ -10,14 +10,36 @@
 }
 
 .recipes_chicken {
+    margin: 0 auto;
+    margin-top: 55%;
     width: 90%;
     height: 40%;
     background-color: #fff;
     opacity: 0.87;
 }
 
-.recipes_right {
-    background-color: grey;
+.recipe_border {
+    display: block;
+    margin-top: 10px;
+    border: 2px solid #ffd977;
 }
 
+.recipes_right {
+    background-image:linear-gradient(rgb(255, 255, 255) 11rem, rgb(240, 249, 249) 17rem);
+}
+
+.recipe_ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: 0;
+}
+
+.card-img-top {
+    border-radius: 0;
+}
 
