@@ -1,0 +1,40 @@
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+header .navbar {
+    padding-right: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+header .logo {
+  width: 200px;
+  padding-left: 45px;
+}
+
+header .navbar-nav {
+    text-transform: uppercase;
+  }
+
+header .search-icon {
+    width: 25px;
+    margin-left: auto;
+}
+
+header .bg-light {
+    background-color: #fff !important;
+}
+
+@media only screen and (max-width: 991px) {
+    header .navbar-collapse {
+        margin-left: 20px;
+    }
+
+    header .logo {
+        padding-left: 18px;
+    }
+}
