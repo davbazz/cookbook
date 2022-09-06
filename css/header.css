@@ -1,6 +1,5 @@
-.container {
-    margin: 0;
-    padding: 0;
+header {
+    height: 5vh;
 }
 
 header .navbar {
@@ -9,6 +8,12 @@ header .navbar {
     top: 0;
     width: 100%;
     border-bottom: 1px solid black;
+    z-index: 1;
+}
+
+header .nav-link {
+    color: #000;
+    font-weight: bold;
 }
 
 header .logo {
