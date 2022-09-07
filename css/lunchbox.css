@@ -1,0 +1,39 @@
+body {
+    background: #f0f9f9
+  }
+  .card-img-top {
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .victorCard {
+    background: white;
+  }
+  #card-1 {
+    background-image: url("http://dailyburn.com/life/wp-content/uploads/2015/10/Nom-Nom-Paleo-Meal-Prep-1-1.png");
+  }
+  #card-2 {
+    background-image: url("https://www.simplyrecipes.com/thmb/D9L1X9qSzK3_Nvzqx2zO4xIPtVg=/2000x1335/filters:fill(auto,1)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__07__Back-to-School-Lunchboxes-LEAD-8244f88716e34b3db440c8378b19cd16.jpg");
+  }
+  #card-3 {
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/81lKK8zDu%2BL._AC_SL1500_.jpg");
+  }
+  
+  h3 {
+    text-align: center;
+  }
+
+  .card-body {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 0.6rem;
+    position: relative;
+  }
+  
+    .card-title {
+        color: #b5460f;
+        text-align: center;
+    }
