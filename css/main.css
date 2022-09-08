@@ -3,6 +3,7 @@
 @import 'lunchbox.css';
 @import 'team.css';
 @import 'test.css';
+@import 'footer.css';
 
 * {
     box-sizing: border-box;
