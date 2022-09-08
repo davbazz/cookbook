@@ -1,17 +1,16 @@
 .recipes {
-    height: 95vh;
-    margin-top: 5vh;
+    min-height: 95vh;
     padding: 0;
 }
 
 .recipes_left {
-    max-height: 95vh;
+    height: 95vh;
     background-color: #fff;
     background: url('https://www.simplyrecipes.com/thmb/Gc7ox1jTo2dUJHgi17eHEolw96g=/1200x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Pollo-Campero-Fried-Chicken-LEAD-06-2f69971cf13d4c7089140d6a5d6c3165.jpg') center center/cover no-repeat;
 }
 
 .recipes_chicken {
-    margin: 55% auto 0 auto;
+    margin: 50% auto 0 auto;
     padding: 2%;
     width: 90%;
     height: auto;
@@ -58,8 +57,9 @@ fieldset a:hover {
 
 
 .recipes_right {
+    height: 95vh;
     background-image:linear-gradient(rgb(255, 255, 255) 11rem, rgb(240, 249, 249) 17rem);
-    padding: 1% 4%;
+    padding: 0% 4%;
 }
 
 .recipes_header {
@@ -67,14 +67,9 @@ fieldset a:hover {
     width: auto;
 }
 
-.row_wrap {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .recipes_right h2 {
     position: relative;
-    font-size: 2.5em;
+    font-size: 2.3em;
     border-bottom: 3px solid #ffd977;
     cursor: pointer;
     display: inline-block;
@@ -82,17 +77,6 @@ fieldset a:hover {
 
 .recipes_right h2:hover {
     border-bottom: 3px solid #b5460f;
-}
-
-.card_columns {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
-}
-
-.row_top {
-    margin-bottom: 5%;
 }
 
 .card {
@@ -110,4 +94,11 @@ fieldset a:hover {
 
 .recipe_right-text {
     font-size: 1.5rem;
+}
+
+@media (max-width: 992px) {
+    .recipes_chicken {
+        margin: 30% auto 0 auto;
+    }
+
 }

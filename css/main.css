@@ -2,7 +2,6 @@
 @import 'recipes.css';
 @import 'lunchbox.css';
 @import 'team.css';
-@import 'test.css';
 @import 'footer.css';
 
 * {
@@ -23,7 +22,6 @@ ul {
     max-width: 100%;
 }
 
-/* Three columns side by side */
 .column {
     float: left;
     width: 33.3%;
@@ -31,7 +29,6 @@ ul {
     padding: 0 8px;
   }
   
-  /* Three columns side by side */
 .column_team {
     float: left;
     width: 33.3%;
