@@ -1,5 +1,5 @@
 .recipes {
-    min-height: 95vh;
+    min-height: auto;
     padding: 0;
 }
 
@@ -57,7 +57,7 @@ fieldset a:hover {
 
 
 .recipes_right {
-    height: 95vh;
+    min-height: auto;
     background-image:linear-gradient(rgb(255, 255, 255) 11rem, rgb(240, 249, 249) 17rem);
     padding: 0% 4%;
 }
@@ -94,6 +94,17 @@ fieldset a:hover {
 
 .recipe_right-text {
     font-size: 1.5rem;
+}
+
+
+.recipes_time {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.recipes_time > .bi {
+    margin: 0 10px 16px 0;
 }
 
 @media (max-width: 992px) {
