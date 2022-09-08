@@ -10,10 +10,7 @@ body {
   .victorCard {
     border: #d2d2d2;
     border-radius: 1px;
-    margin-left: 50px;
-    margin-right: 50px;
     background: white;
-    max-width: 198px;
     min-height: 350px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
@@ -27,8 +24,9 @@ body {
     background-image: url("https://images-na.ssl-images-amazon.com/images/I/81lKK8zDu%2BL._AC_SL1500_.jpg");
   }
   
-  h3 {
+  h2 {
     text-align: center;
+    margin-bottom: 20px;
   }
 
   .card-body {
@@ -38,10 +36,32 @@ body {
     width: 100%;
     padding: 0 0.6rem;
     position: relative;
-    
+    font-size: 1.5rem;
   }
   
     .card-title {
         color: #b5460f;
         text-align: center;
+    }
+
+    #box-pic {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      .victorCard  {
+        margin-bottom: 20px;
+      }
+      
+    #box-pic {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    }
+
+    .victorCard:hover {
+      border-right:2px solid #ffd977;
+      border-bottom:2px solid #ffd977;
+      box-shadow: 2px 2px 2px 2px #ffd977;
     }
