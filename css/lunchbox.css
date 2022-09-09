@@ -65,3 +65,12 @@ body {
       border-bottom:2px solid #ffd977;
       box-shadow: 2px 2px 2px 2px #ffd977;
     }
+
+   
+    a:link {
+      text-decoration: none;
+      color:black
+    }
+    a:visited {
+      color: black;
+    }
