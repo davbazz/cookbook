@@ -1,7 +1,5 @@
-body {
-    background: #f0f9f9
-  }
-  .card-img-top {
+
+  .lb-img{
     height: 200px;
     background-position: center;
     background-size: cover;
@@ -29,7 +27,7 @@ body {
     margin-bottom: 20px;
   }
 
-  .card-body {
+  .lb-body {
     display: flex;
     flex: 1 0 auto;
     flex-direction: column;
@@ -39,7 +37,7 @@ body {
     font-size: 1.5rem;
   }
   
-    .card-title {
+    .lb-title {
         color: #b5460f;
         text-align: center;
     }
@@ -64,4 +62,13 @@ body {
       border-right:2px solid #ffd977;
       border-bottom:2px solid #ffd977;
       box-shadow: 2px 2px 2px 2px #ffd977;
+    }
+
+   
+    a:link {
+      text-decoration: none;
+      color:black
+    }
+    a:visited {
+      color: black;
     }
