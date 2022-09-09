@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Cook Book</title>
 </head>
-<body>
+<body id="dark-mode">
     <div class="container">
         <header id="nav-bar">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -23,54 +23,41 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">recipes<span class="sr-only"></span></a>
+                      <a class="nav-link" href="#recipes">recipes<span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Quick & Easy</a>
+                      <a class="nav-link" href="#lunchbox">Lunch Box</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#team">our team</a>
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        In the Kitchen
+                          Holidays & Seasons
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Table Talk
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Holidays & Seasons
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://www.shopify.com/blog/how-to-write-an-about-us-page" target="_blank">About</a>
+                    </li>
                   </ul>
-                  <img class="search-icon" src="./img/search-icon.png" alt="search">
+                  <div class="right-side-nav">
+                    <button id="btn-dark" type="button" onclick="darkMode()">Dark</button>
+                    <img class="search-icon" src="./img/search-icon.png" alt="search">
+                  </div>
                 </div>
             </nav>
         </header>
         <main>
-            <section class="recipes">
+            <section id="recipes" class="recipes">
                 <div class="row">
                     <div class="recipes_left col-lg-6 col-md-12">
                         <article class="recipes_chicken">
@@ -198,7 +185,7 @@
                     </div>
                 </div>
             </section>
-            <section class="lunchbox mt-5"> <h3>Lunch Box</h3>           
+            <section id="lunchbox" class="lunchbox mt-5"> <h3>Lunch Box</h3>           
               <div class="row" id="box-pic">
                 <div class="col-12 col-md-4">
                   <div class="victorCard">
@@ -234,7 +221,7 @@
                 </div>
               </div>
             </section>
-            <section class="team">
+            <section id="team" class="team">
                 <header class="text-center py-5 mb-4">
                     <div class="container">
                         <h1><span class="note">Meet the Team</span></h1>

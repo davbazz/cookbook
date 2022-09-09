@@ -1,8 +1,8 @@
-header {
+#nav-bar {
     height: 5vh;
 }
 
-header .navbar {
+#nav-bar .navbar {
     padding-right: 20px;
     position: fixed;
     top: 0;
@@ -12,35 +12,60 @@ header .navbar {
     z-index: 1;
 }
 
-header .nav-link {
+#nav-bar .nav-link {
     color: #000;
     font-weight: bold;
 }
 
-header .logo {
+.right-side-nav {
+    margin-left: auto;
+}
+
+#nav-bar .logo {
   width: 212px;
   padding-left: 45px;
 }
 
-header .navbar-nav {
+#nav-bar .navbar-nav {
     text-transform: uppercase;
   }
 
-header .search-icon {
-    width: 25px;
-    margin-left: auto;
+#nav-bar .navbar-nav .nav-link:hover {
+    color: #ffd977;
 }
 
-header .bg-light {
+#nav-bar .search-icon {
+    width: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#nav-bar .bg-light {
     background-color: #fff !important;
 }
 
+#nav-bar .dark-icon {
+    width: 35px;
+}
+
+#nav-bar #btn-dark {
+    background-image: url(../img/day-and-night.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    color: black;
+    border: 0;
+    background-color: transparent;
+    padding-left: 35px;
+    font-size: 20px;
+}
+
 @media only screen and (max-width: 991px) {
-    header .navbar-collapse {
+    #nav-bar .navbar-collapse {
         margin-left: 20px;
     }
 
-    header .logo {
+    #nav-bar .logo {
         padding-left: 18px;
     }
 }
