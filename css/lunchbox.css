@@ -1,7 +1,5 @@
-body {
-    background: #f0f9f9
-  }
-  .card-img-top {
+
+  .lb-img{
     height: 200px;
     background-position: center;
     background-size: cover;
@@ -29,7 +27,7 @@ body {
     margin-bottom: 20px;
   }
 
-  .card-body {
+  .lb-body {
     display: flex;
     flex: 1 0 auto;
     flex-direction: column;
@@ -39,7 +37,7 @@ body {
     font-size: 1.5rem;
   }
   
-    .card-title {
+    .lb-title {
         color: #b5460f;
         text-align: center;
     }
