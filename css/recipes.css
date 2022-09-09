@@ -1,16 +1,17 @@
 .recipes {
-    min-height: auto;
+    min-height: 95vh;
+    width: 100%;
     padding: 0;
+    margin: 0 auto;
 }
 
 .recipes_left {
-    height: 95vh;
-    background-color: #fff;
+    min-height: 95vh;
     background: url('https://www.simplyrecipes.com/thmb/Gc7ox1jTo2dUJHgi17eHEolw96g=/1200x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Pollo-Campero-Fried-Chicken-LEAD-06-2f69971cf13d4c7089140d6a5d6c3165.jpg') center center/cover no-repeat;
 }
 
 .recipes_chicken {
-    margin: 50% auto 0 auto;
+    margin: 45% auto 0 auto;
     padding: 2%;
     width: 90%;
     height: auto;
@@ -57,59 +58,177 @@ fieldset a:hover {
 
 
 .recipes_right {
-    min-height: auto;
+    max-height: 95vh;
     background-image:linear-gradient(rgb(255, 255, 255) 11rem, rgb(240, 249, 249) 17rem);
-    padding: 0% 4%;
-}
-
-.recipes_header {
-    margin: 0 auto;
-    width: auto;
+    padding: 4% 5% 0 5%;
+    text-align: center;
 }
 
 .recipes_right h2 {
-    position: relative;
     font-size: 2.3em;
     border-bottom: 3px solid #ffd977;
     cursor: pointer;
     display: inline-block;
+    margin: 0 auto;
 }
 
 .recipes_right h2:hover {
     border-bottom: 3px solid #b5460f;
 }
 
-.card {
-    border-radius: 0;
+.card_wrapper {
+    margin: 5% auto;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 5%;
 }
 
-.card-img-top {
-    border-radius: 0;
-}
-
-.recipe_right-title {
-    color: #b5460f;
-    font-size: 1rem;
-}
-
-.recipe_right-text {
-    font-size: 1.5rem;
-}
-
-
-.recipes_time {
+.card_body {
+    position: relative;
+    width: auto;
+    height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items:center;
+    border: 1px solid rgb(193, 197, 202);
+    background-color: #fff;
 }
 
-.recipes_time > .bi {
-    margin: 0 10px 16px 0;
+.card_body:hover {
+    border: none;
+    border-right: 4px solid #ffd977;
+    border-bottom: 4px solid #ffd977;
+
+}
+
+.recipes_right_img {
+    width: 100%;
+    margin: 0 auto;
+    height: 10rem;
+}
+
+.card_bottom {
+    height: 8rem;
+    padding-top: 2%;
+}
+
+.card_title {
+    text-align: center;
+    color: #b5460f;
+    font-weight: bold;
+}
+
+.card_text {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+.card_time {
+    position: absolute;
+    left: 4%;
+    bottom: 4%;
+    display: flex;
+    align-self: flex-start;
+    justify-content: space-around;
+    width: auto;
+}
+
+.card_time > svg {
+    margin: 0;
+    padding: 0;
+}
+
+.card_time > p {
+    margin: 0;
+    padding: 0;
+    margin-left: 5px;
+}
+
+
+@media (max-width: 1200px) {
+    .recipes_right {
+        padding: 6% 5% 0 5%;
+    }
+    .recipes_right h2 {
+        font-size: 2.1em;
+    }
+    .recipes_right_img {
+        height: 8rem;
+    }
+    .card_bottom {
+        height: 6rem;
+    }
+    .card_title {
+        font-size: 0.75rem;
+    }  
+    .card_text {
+        font-size: 1.2rem;
+        line-height: 1.2rem; 
+    }
 }
 
 @media (max-width: 992px) {
     .recipes_chicken {
-        margin: 30% auto 0 auto;
+        margin: 35% auto 0 auto;
     }
-
+    .recipes_right {
+        padding: 6% 3% 0 3%;
+    }
+    .card_wrapper {
+        margin: 5% auto;
+        gap: 5%;
+        padding: 0 20%;
+    }
+    .recipes_right_img {
+        height: 7rem;
+    } 
+    .card_bottom {
+        height: 7rem;
+    }
+    .card_title {
+        font-size: 0.75rem;
+    }  
+    .card_text {
+        font-size: 1.2rem;
+        line-height: 1.2rem; 
+    }
 }
+
+@media (max-width: 767px) {
+    .recipes {
+        height: auto;
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .recipes_left {
+        max-height: fit-content;
+    }
+    .recipes_chicken {
+        margin: 20% auto 0 auto;
+    }
+    .recipes_right {
+        padding: 6% 3% 0 3%;
+    }
+    .card_wrapper {
+        margin: 5% auto;
+        gap: 5%;
+        padding: 0 15%;
+    }
+}
+
+@media (max-width: 576px) {
+    .recipes_right {
+        height: auto;
+        padding: 6% 10% 0 10%;
+    }
+    .card_wrapper {
+        margin: 5% auto;
+        gap: 5%;
+        padding: 0 3%;
+    }
+} 
